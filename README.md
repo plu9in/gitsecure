@@ -106,7 +106,7 @@ Créer les templates:
 ./scripts/create-git-hooks-templates.sh
 ```
 
-Modifier patterns dans pre-commit:
+Modifier les patterns dans le répertoire pre-commit:
 ```
 FORBIDDEN_PATTERNS=(
     "*.key"
