@@ -23,9 +23,9 @@ Pour un dépôt spécifique:
 ## Hooks Disponibles
 
 ### pre-commit - Scan de sécurité:
-- Fichiers sensibles: .key, .token, .crt, .pem, .env
-- Mots-clés: password=, token=, secret=
-- Clés privées: BEGIN PRIVATE KEY, BEGIN RSA PRIVATE KEY
+- Fichiers sensibles: `.key, .token, .crt, .pem, .env`
+- Mots-clés: `password=, token=, secret=`
+- Clés privées: `BEGIN PRIVATE KEY, BEGIN RSA PRIVATE KEY`
 
 ### pre-push - Vérification historique:
 - Vérifie les 10 derniers commits
@@ -35,7 +35,7 @@ Pour un dépôt spécifique:
 ### commit-msg - Validation messages:
 - Longueur minimale: 10 caractères
 - Format: type: description
-- Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert
+- Types: `feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert`
 
 ## Utilisation Avancée
 
@@ -69,7 +69,7 @@ Contourner les hooks:
 git commit --no-verify -m "Emergency fix"
 git push --no-verify
 ```
-Attention: le contournement doit être l'exception et non la règle.
+**Attention: le contournement doit être l'exception et non la règle.**
 
 Supprimer les hooks:
 ```
@@ -200,4 +200,4 @@ Signaler un problème:
 
 MIT 
 
-Attention: Ces hooks sont une sécurité supplémentaire mais ne remplacent pas une bonne hygiène de développement.
+**Attention: Ces hooks sont une sécurité supplémentaire mais ne remplacent pas une bonne hygiène de développement.**
