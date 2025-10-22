@@ -56,9 +56,9 @@ Exemples:
 
 ## Fichiers Bloqués
 
-Extensions: .key, .token, .crt, .pem, .p12, .pfx, .env
-Noms: unseal_keys*, root_token*, secrets/*, backups/*
-Contenu: password=*, token=*, secret=*, BEGIN PRIVATE KEY, BEGIN RSA PRIVATE KEY, BEGIN CERTIFICATE
+Extensions: `.key, .token, .crt, .pem, .p12, .pfx, .env`
+Noms: `unseal_keys*, root_token*, secrets/*, backups/*`
+Contenu: `password=*, token=*, secret=*, BEGIN PRIVATE KEY, BEGIN RSA PRIVATE KEY, BEGIN CERTIFICATE`
 
 ## Urgence
 
