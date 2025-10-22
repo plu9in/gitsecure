@@ -67,7 +67,7 @@ Contourner les hooks:
 git commit --no-verify -m "Emergency fix"
 git push --no-verify
 ```
-Attention: cela doit être l'exception et non la règle.
+Attention: le contournement doit être l'exception et non la règle.
 
 Supprimer les hooks:
 ```
