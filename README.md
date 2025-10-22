@@ -14,7 +14,7 @@ Pour un dépôt spécifique:
 ./scripts/setup-git-hooks.sh /chemin/vers/mon/depot
 ```
 
-Installation universelle:
+### Installation universelle:
 ```
 ./install-git-hooks-universal.sh
 ./install-git-hooks-universal.sh /chemin/vers/depot
@@ -22,24 +22,24 @@ Installation universelle:
 
 ## Hooks Disponibles
 
-pre-commit - Scan de sécurité:
+### pre-commit - Scan de sécurité:
 - Fichiers sensibles: .key, .token, .crt, .pem, .env
 - Mots-clés: password=, token=, secret=
 - Clés privées: BEGIN PRIVATE KEY, BEGIN RSA PRIVATE KEY
 
-pre-push - Vérification historique:
+### pre-push - Vérification historique:
 - Vérifie les 10 derniers commits
 - Détecte fichiers sensibles dans l'historique
 - Bloque push si secrets détectés
 
-commit-msg - Validation messages:
+### commit-msg - Validation messages:
 - Longueur minimale: 10 caractères
 - Format: type: description
 - Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert
 
 ## Utilisation Avancée
 
-Options:
+### Options:
 ```
 ./scripts/setup-git-hooks.sh --help
 ./scripts/setup-git-hooks.sh --list
@@ -47,7 +47,7 @@ Options:
 ./scripts/setup-git-hooks.sh -s /custom/hooks /chemin/depot
 ```
 
-Exemples:
+### Exemples:
 ```
 ./scripts/setup-git-hooks.sh
 ./scripts/setup-git-hooks.sh ~/projects/my-vault-config
@@ -57,7 +57,9 @@ Exemples:
 ## Fichiers Bloqués
 
 Extensions: `.key, .token, .crt, .pem, .p12, .pfx, .env`
+
 Noms: `unseal_keys*, root_token*, secrets/*, backups/*`
+
 Contenu: `password=*, token=*, secret=*, BEGIN PRIVATE KEY, BEGIN RSA PRIVATE KEY, BEGIN CERTIFICATE`
 
 ## Urgence
